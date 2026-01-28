@@ -1,14 +1,52 @@
-<nav class="navbar">
-    <div class="logo">FerDev<span>Studio</span></div>
-    <ul class="menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Servicios</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FerDev Studio - Agencia Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<header class="hero">
-    <h1>Creamos el futuro digital</h1>
-    <p>Diseño web profesional para hacer crecer tu negocio.</p>
-    <button class="btn-principal" onclick="saludar()">Empezar Proyecto</button>
-</header>
+    <nav class="navbar">
+        <div class="logo">Ferdev<span>Studio</span></div>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Creamos el futuro digital</h1>
+        <p>Diseño web profesional para hacer crecer tu negocio.</p>
+        <button class="btn-principal" onclick="saludar()">Empezar Proyecto</button>
+    </header><section class="servicios">
+    <h2>Nuestros Servicios</h2>
+    <div class="contenedor-cards">
+        <div class="card">
+            <h3>Diseño Web</h3>
+            <p>Creamos sitios modernos y atractivos que captan la atención de tus clientes.</p>
+        </div>
+        <div class="card">
+            <h3>Desarrollo de Apps</h3>
+            <p>Convertimos tus ideas en aplicaciones móviles potentes y funcionales.</p>
+        </div>
+        <div class="card">
+            <h3>Marketing Digital</h3>
+            <p>Hacemos que tu marca destaque en redes sociales y buscadores.</p>
+        </div>
+    </div>
+</section><section class="contacto">
+    <h2>Contáctanos</h2>
+    <form class="formulario">
+        <input type="text" placeholder="Tu Nombre" required>
+        <input type="email" placeholder="Tu Correo Electrónico" required>
+        <textarea placeholder="Cuéntanos sobre tu proyecto" rows="5"></textarea>
+        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+    </form>
+</section>
+
+    <script src="script.js"></script>
+</body>
+</html>

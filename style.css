@@ -68,3 +68,83 @@ body {
 }
 
 .btn-principal:hover { background: #0056b3; transform: scale(1.05); }
+/* Sección Servicios */
+.servicios {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: white;
+}
+
+.servicios h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* La Rejilla (Grid) */
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espacio entre tarjetas */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Las Tarjetas Individuales */
+.card {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efecto de levitación */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    color: #007bff;
+    margin-bottom: 15px;
+}.contacto {
+    padding: 80px 50px;
+    background-color: #f0f4f8;
+    text-align: center;
+}
+
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre campos */
+}
+
+.formulario input, .formulario textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.formulario input:focus, .formulario textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.2);
+}
+
+.btn-enviar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-enviar:hover {
+    background-color: #007bff;
+}
