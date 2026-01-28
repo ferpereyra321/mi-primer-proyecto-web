@@ -147,4 +147,29 @@ body {
 
 .btn-enviar:hover {
     background-color: #007bff;
+}.btn-secundario {
+    padding: 15px 30px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+.btn-secundario:hover { background: white; color: #333; }
+.skills { padding: 50px; text-align: center; background: #fff; }
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.skill-item {
+    background: #e9ecef;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #007bff;
 }
