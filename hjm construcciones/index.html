@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HJM Construcciones | Construcción Moderna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HJM Construcciones</h1>
+        <nav>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#nosotros">Quiénes Somos</a></li>
+    </ul>
+</nav>
+            
+    </header>
+
+    <main>
+        <h2>Construimos tus sueños con solidez.</h2>        
+        <a href="#proyectos" class="boton-principal">Ver Proyectos</a>        
+    </main>
+    <section id="servicios">
+    <h2 class="titulo-seccion">Nuestros Servicios</h2>
+    
+    <div class="contenedor-servicios">
+        <div class="tarjeta">
+            <h3>Construcción Civil</h3>
+            <p>Edificios y viviendas residenciales con los más altos estándares de calidad.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Arquitectura Moderna</h3>
+            <p>Diseños vanguardistas que combinan estética, funcionalidad y sustentabilidad.</p>
+        </div>
+
+        <div class="tarjeta">
+            <h3>Remodelaciones</h3>
+            <p>Transformamos espacios antiguos en ambientes modernos y renovados.</p>
+        </div>
+    </div>
+</section><section id="proyectos">
+    <h2 class="titulo-seccion">Nuestros Proyectos</h2>
+    
+    <div class="filtros">
+    <a href="#galeria-obra-civil" class="btn-filtro">Obra Civil</a>
+    <a href="#galeria-hormigon" class="btn-filtro">Fundaciones y Hormigón</a>
+    <a href="#galeria-viales" class="btn-filtro">Obras Viales</a>
+
+</div>
+    </div>
+
+    <div class="galeria-grid">
+        <div class="proyecto-item obra-civil" id="obra-civil">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=600&q=80" alt="Edificio">
+            <div class="info-proyecto"><h4>Edificio Central</h4><p>Obra Civil</p></div>
+        </div>
+
+        <div class="proyecto-item hormigon" id="hormigon">
+            <img src="https://images.unsplash.com/photo-1517089535819-f485e657597b?auto=format&fit=crop&w=600&q=80" alt="Cimientos">
+            <div class="info-proyecto"><h4>Bases Torre Sur</h4><p>Fundaciones</p></div>
+        </div>
+
+        <div class="proyecto-item obras-viales" id="obras-viales">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Puente">
+            <div class="info-proyecto"><h4>Puente Interurbano</h4><p>Obras Viales</p></div>
+        </div>
+        
+        </div>
+</section>
+        </div>
+
+        <div class="proyecto-item">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=600&q=80" alt="Residencia Moderna">
+            <div class="info-proyecto">
+                <h4>Residencia Lomas</h4>
+                <p>Vivienda Unifamiliar</p>
+            </div>
+        </div>
+
+        <div class="proyecto-item">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="Obra Vial">
+            <div class="info-proyecto">
+                <h4>Puente del Sol</h4>
+                <p>Infraestructura Vial</p>
+            </div>
+        </div>
+        
+        <div class="proyecto-item">
+            <img src="https://images.unsplash.com/photo-1448630360428-65456885c650?auto=format&fit=crop&w=600&q=80" alt="Complejo Habitacional">
+            <div class="info-proyecto">
+                <h4>Barrio Norte</h4>
+                <p>Complejo de Departamentos</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+<section id="testimonios">
+    <h2 class="titulo-seccion">Lo que dicen nuestros clientes</h2>
+    
+    <div class="contenedor-testimonios">
+        <div class="testimonio-card">
+            <div class="estrellas">★★★★★</div>
+            <p>"Excelente atención y cumplimiento en los plazos de mi casa. Muy profesionales."</p>
+            <h4>- Juan Pérez</h4>
+        </div>
+
+        <div class="testimonio-card">
+            <div class="estrellas">★★★★★</div>
+            <p>"La remodelación del local quedó increíble. Captaron la idea de inmediato."</p>
+            <h4>- María García</h4>
+        </div>
+    </div>
+
+    <div class="dejar-comentario">
+        <p>¿Fuiste nuestro cliente?</p>
+        <a href="#contacto" class="btn-comentario">Déjanos tu opinión aquí</a>
+    </div>
+</section>
+</section>
+<section id="contacto" style="padding: 60px 5%;">
+    <h2 class="titulo-seccion">Contacto</h2>
+    <p style="text-align:center; margin-bottom: 30px;">Solicita tu presupuesto sin cargo</p>
+
+    <form action="https://formspree.io/f/fkeaqpzo" method="POST" class="formulario">
+        <div class="campo">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ej: Juan Pérez" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" name="email" id="email" placeholder="correo@ejemplo.com" required>
+        </div>
+
+        <div class="campo">
+            <label for="mensaje">Tu Consulta</label>
+            <textarea name="mensaje" id="mensaje" placeholder="Cuéntanos sobre tu proyecto (obra civil, hormigón, etc.)" required></textarea>
+        </div>
+
+        <button type="submit" class="boton-principal">Enviar Solicitud</button>
+    </form>
+</section>
+
+        
+    </div>
+</section>
+<section id="nosotros">
+    <div class="nosotros-contenedor">
+        <div class="nosotros-imagen">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Equipo de trabajo">
+        </div>
+        <div class="nosotros-texto">
+            <span class="subtitulo">Nuestra Historia</span>
+            <h2>Quiénes Somos</h2>
+            <p>En <strong>HJM Construcciones</strong>, no solo levantamos muros, construimos el futuro de nuestra comunidad. Somos una empresa familiar que entiende el valor de cada proyecto, desde la remodelación más pequeña hasta la obra civil más ambiciosa.</p>
+            <p>Nuestra filosofía se basa en la transparencia total con el cliente y el uso de materiales de primera calidad que aseguran la durabilidad de cada estructura.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 HJM Construcciones - Todos los derechos reservados.</p>
+</footer>
+<div id="galeria-viales" class="modal-galeria">
+    <div class="modal-contenido">
+        <a href="#proyectos" class="cerrar">&times;</a>
+        <h3>Obras Viales e Infraestructura</h3>
+        <p>Expertos en pavimentación, puentes y logística de caminos.</p>
+        
+        <div class="fotos-grid">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=400" alt="Carretera 1">
+            <img src="https://images.unsplash.com/photo-1590483734724-386175e11690?auto=format&fit=crop&w=400" alt="Puente 2">
+            <img src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?auto=format&fit=crop&w=400" alt="Asfalto 3">
+            <img src="https://images.unsplash.com/photo-1512401011492-c0b7305948f9?auto=format&fit=crop&w=400" alt="Maquinaria 4">
+        </div>
+    </div>
+</div>
+<div id="galeria-hormigon" class="modal-galeria">
+    <div class="modal-contenido">
+        <a href="#proyectos" class="cerrar">&times;</a>
+        <h3>Fundaciones y Hormigón Armado</h3>
+        <p>Especialistas en bases sólidas y estructuras de alta resistencia.</p>
+        
+        <div class="fotos-grid">
+            <img src="https://images.unsplash.com/photo-1517089535819-f485e657597b?auto=format&fit=crop&w=400" alt="Cimientos 1">
+            <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=400" alt="Hormigón 2">
+            <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?auto=format&fit=crop&w=400" alt="Obra 3">
+            <img src="https://images.unsplash.com/photo-1541604193435-22287d32c2c2?auto=format&fit=crop&w=400" alt="Estructura 4">
+        </div>
+    </div>
+</div>
+<div id="galeria-obra-civil" class="modal-galeria">
+    <div class="modal-contenido">
+        <a href="#proyectos" class="cerrar">&times;</a>
+        <h3>Proyectos de Obra Civil</h3>
+        <div class="fotos-grid">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=400" alt="Obra 1">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=400" alt="Obra 2">
+            <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=400" alt="Obra 3">
+        </div>
+    </div>
+</div>
+</body>
+<a href="https://wa.me/3513449890?text=Hola%20HJM%20Construcciones,%20vi%20su%20página%20web%20y%20me%20gustaría%20solicitar%20un%20presupuesto%20para%20una%20obra." 
+   class="btn-whatsapp" 
+   target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</a>
+</html>

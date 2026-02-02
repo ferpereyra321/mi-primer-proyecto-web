@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Gracias por contactarnos! | HJM Construcciones</title>
+    <link rel="stylesheet" href="style.css"> <style>
+        .mensaje-gracias {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="mensaje-gracias">
+        <h1 style="color: #e67e22;">¡Mensaje Enviado con Éxito!</h1>
+        <p>Gracias por confiar en <strong>HJM Construcciones</strong>. <br> Nos pondremos en contacto contigo a la brevedad.</p>
+        <br>
+        <a href="index.html" class="boton-principal">Volver al Inicio</a>
+    </div>
+</body>
+</html>

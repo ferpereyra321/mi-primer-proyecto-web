@@ -1,0 +1,568 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Y un pequeño ajuste para que los enlaces del menú se vean bien */
+nav a {
+    text-decoration: none; /* Quita el subrayado feo */
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e67e22; /* Cambia a naranja al pasar el mouse */
+}
+/* Configuraciones generales */
+body {
+    font-family: 'Montserrat', sans-serif; /* Cambiamos la fuente aquí */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Encabezado y Navegación */
+header {
+    background-color: #2c3e50; /* Gris azulado oscuro */
+    color: white;
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none; /* Quita los puntitos de la lista */
+    display: flex;
+    gap: 20px;
+}
+
+/* Sección Principal (Hero) */
+main {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+/* El Botón */
+/* Estilo para el enlace convertido en botón */
+.boton-principal {
+    display: inline-block; /* Importante para que acepte márgenes y rellenos */
+    background-color: #e67e22; /* El naranja de construcción */
+    color: white !important;   /* Forzamos el color blanco */
+    text-decoration: none;     /* Quitamos el subrayado */
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 15px rgba(230, 126, 34, 0.4);
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.boton-principal:hover {
+    background-color: #d35400; /* Un naranja más oscuro */
+    transform: translateY(-3px); /* Efecto de que flota al tocarlo */
+    box-shadow: 0 6px 20px rgba(230, 126, 34, 0.6);
+}
+
+
+button:hover {
+    background-color: #d35400; /* Se oscurece al pasar el mouse */
+}
+/* Sección Servicios */
+#servicios {
+    padding: 60px 5%;
+    background-color: #f4f4f4; /* Un gris muy clarito para diferenciar */
+    text-align: center;
+}
+
+.titulo-seccion {
+    color: #2c3e50;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+}
+
+.contenedor-servicios {
+    display: grid;
+    /* Esto crea 3 columnas iguales automáticamente */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px; /* Espacio entre tarjetas */
+}
+
+.tarjeta {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave para dar profundidad */
+    transition: transform 0.3s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px); /* La tarjeta "flota" cuando pasas el mouse */
+    border-bottom: 5px solid #e67e22; /* Línea naranja de acento */
+}
+
+.tarjeta h3 {
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+/* Sección Proyectos */
+#proyectos {
+    padding: 60px 5%;
+    background-color: #fff;
+}
+
+.galeria-grid {
+    display: grid;
+    /* Crea una cuadrícula de 2 columnas en móviles y 4 en pantallas grandes */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.proyecto-item {
+    position: relative;
+    overflow: hidden; /* Corta lo que se salga del borde */
+    border-radius: 8px;
+    height: 300px;
+}
+
+.proyecto-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+    transition: 0.5s ease;
+}
+
+/* El cuadro oscuro con texto que aparece al pasar el mouse */
+.info-proyecto {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(230, 126, 34, 0.9); /* Color naranja con transparencia */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Invisible por defecto */
+    transition: 0.5s;
+}
+
+.proyecto-item:hover .info-proyecto {
+    opacity: 1; /* Aparece al pasar el mouse */
+}
+
+.proyecto-item:hover img {
+    transform: scale(1.1); /* La imagen se agranda un poquito */
+}
+/* Sección Contacto */
+#contacto {
+    padding: 80px 5%;
+    background-color: #2c3e50;
+    color: white;
+}
+
+.contacto-contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Para que en celular se ponga uno abajo del otro */
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contacto-info, .formulario {
+    flex: 1; /* Ambos ocupan el mismo espacio */
+    min-width: 300px;
+}
+
+/* Estilos del Formulario */
+/* Contenedor del Formulario */
+.formulario {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-top: 5px solid #e67e22; /* Detalle en naranja construcción */
+}
+
+/* Espaciado de cada grupo (label + input) */
+.campo {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Estilo de los cuadros de texto */
+.campo input, 
+.campo textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background-color: #fdfdfd;
+}
+
+/* Efecto cuando haces clic para escribir */
+.campo input:focus, 
+.campo textarea:focus {
+    outline: none;
+    border-color: #e67e22;
+    box-shadow: 0 0 8px rgba(230, 126, 34, 0.2);
+    background-color: #fff;
+}
+
+/* Ajuste para el área de mensaje */
+.campo textarea {
+    height: 120px;
+    resize: none; /* Evita que el cliente deforme la caja */
+}
+
+/* El botón dentro del formulario */
+.formulario .boton-principal {
+    width: 100%; /* Botón ancho total en móviles */
+    cursor: pointer;
+    border: none;
+}
+
+
+.formulario input, .formulario textarea {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+}
+
+.formulario button {
+    background-color: #e67e22;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a252f;
+    color: #bdc3c7;
+    font-size: 0.9rem;
+}
+/* Esto se activa solo cuando la pantalla mide menos de 768px (celulares y tablets) */
+@media (max-width: 768px) {
+    
+    /* 1. El menú: los ponemos uno al lado del otro pero con scroll o ajuste */
+    header {
+        flex-direction: column; /* El logo arriba y el menú abajo */
+        text-align: center;
+        padding: 20px;
+    }
+
+    nav ul {
+        padding: 0;
+        margin-top: 15px;
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* 2. El título principal: lo achicamos para que no tape todo */
+    h2 {
+        font-size: 2rem;
+    }
+
+    main {
+        padding: 60px 20px;
+    }
+
+    /* 3. Las tarjetas y la galería: 
+       Ya usamos 'auto-fit' antes, así que se acomodan casi solas, 
+       pero vamos a asegurar el contacto. */
+    .contacto-contenedor {
+        flex-direction: column; /* Info arriba, formulario abajo */
+    }
+
+    .contacto-info {
+        text-align: center;
+    }
+}
+/* Estilos del Botón de WhatsApp */
+.btn-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366; /* Verde oficial de WhatsApp */
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    z-index: 1000; /* Para que siempre esté por encima de todo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.btn-whatsapp img {
+    width: 35px; /* Tamaño del icono */
+}
+
+.btn-whatsapp:hover {
+    transform: scale(1.1); /* Se agranda un poco al pasar el mouse */
+    background-color: #20ba5a;
+}
+
+/* Ajuste para celulares: lo hacemos un poco más chico */
+@media (max-width: 768px) {
+    .btn-whatsapp {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+    .btn-whatsapp img {
+        width: 25px;
+    }
+}
+/* Sección Nuestra Empresa */
+#nosotros {
+    padding: 80px 5%;
+    background-color: white;
+}
+
+.nosotros-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nosotros-imagen, .nosotros-texto {
+    flex: 1;
+}
+
+.nosotros-imagen img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 20px 20px 0px #e67e22; /* Un detalle de diseño: sombra sólida naranja */
+}
+
+.subtitulo {
+    color: #e67e22;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nosotros-texto h2 {
+    color: #2c3e50;
+    margin: 10px 0 20px 0;
+    font-size: 2.5rem;
+    text-align: left; /* Alineado a la izquierda para esta sección */
+}
+
+.nosotros-texto p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.valor {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.valor span {
+    color: #e67e22;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .nosotros-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nosotros-texto h2 {
+        text-align: center;
+    }
+    .nosotros-imagen img {
+        box-shadow: 10px 10px 0px #e67e22; /* Sombra más chica en móvil */
+    }
+}
+#testimonios {
+    padding: 80px 5%;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contenedor-testimonios {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.testimonio-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 300px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    font-style: italic;
+}
+
+.estrellas {
+    color: #f1c40f; /* Color dorado */
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.testimonio-card h4 {
+    margin-top: 15px;
+    font-style: normal;
+    color: #e67e22;
+}
+
+.dejar-comentario {
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.btn-comentario {
+    display: inline-block;
+    margin-top: 10px;
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #e67e22;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-comentario:hover {
+    background: #e67e22;
+    color: white;
+}
+/* Botones de Filtro */
+.filtros {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.btn-filtro {
+    text-decoration: none;
+    padding: 10px 20px;
+    border: 2px solid #e67e22;
+    color: #e67e22;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-filtro:hover {
+    background-color: #e67e22;
+    color: white;
+}
+
+/* Efecto de resaltado al seleccionar */
+.proyecto-item:target {
+    outline: 5px solid #e67e22;
+    outline-offset: 5px;
+    transform: scale(1.02);
+}
+/* Estilo del fondo oscuro del modal */
+.modal-galeria {
+    display: none; /* Escondido por defecto */
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9); /* Fondo negro transparente */
+}
+
+/* Mostrar el modal cuando se hace clic en el enlace */
+.modal-galeria:target {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenido {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    max-height: 80vh;
+    overflow-y: auto; /* Scroll si hay muchas fotos */
+    position: relative;
+    text-align: center;
+}
+
+.cerrar {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 40px;
+    text-decoration: none;
+    color: #333;
+}
+
+.fotos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.fotos-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
